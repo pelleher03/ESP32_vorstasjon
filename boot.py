@@ -2,10 +2,14 @@ try:
   import usocket as socket
 except:
   import socket
-import time
+
 from machine import Pin, I2c
+import time
 import network
 import esp
+import dht
+import CCS811
+from bmp280 import *
 esp.osdebug(None)
 import gc
 gc.collect()
